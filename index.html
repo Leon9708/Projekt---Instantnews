@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>instantnews</title>
+
+
+    <link rel="shortcut icon" href="./img/insta.png" />
+    <link rel="stylesheet" href="./webfonts/Montserrat.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://kit.fontawesome.com/dd670ca951.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="renderFeed()">
+    <nav class="place_nav">
+        <div class="box_nav">
+            <button class="nav_button_logotext">
+               <img
+                  class="img_logotext"
+                  src="./img/logo_text.png"
+                  alt="logo_text"
+               />
+            </button>
+            <div class="nav_input">
+                <input id="search" onkeyup="filterFeed()" class="input_search" type="text" placeholder="search" />
+            </div>
+            <div class="nav_links">
+                <button class="nav_link">
+                  <img
+                     class="icon icon_home"
+                     src="./img/home.png"
+                     alt="logo_home"
+                     s
+                  />
+               </button>
+                <button class="nav_link">
+                  <img class="icon" src="./img/send.png" alt="logo_send" />
+               </button>
+                <button class="nav_link">
+                  <img class="icon" src="./img/add.png" alt="logo_add" />
+               </button>
+                <button class="nav_link">
+                  <img
+                     class="icon link_icon_compass"
+                     src="./img/compass.png"
+                     alt="logo_compass"
+                  /></button
+               ><button class="nav_link">
+                  <img
+                     class="icon link_icon_pic"
+                     src="./img/leon.JPG"
+                     alt="logo_picture"
+                  />
+               </button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="place_main">
+            <section id="feed" class="feed"></section>
+            <section class="sidenews">
+                <div class="sidenews_account">
+                    <img class="icon_pic_account icon_pic" src="./img/leon.JPG" alt="logo_picture" />
+                    <div class="box_text_account">
+                        <p class="headtext_account">Leon_777</p>
+                        <p class="subtext_account">Leon | 1997</p>
+                    </div>
+                    <button class="button_sidenews">Wechseln</button>
+                </div>
+                <div class="sidenews_proposal">
+                    <div class="box_proposal_heading">
+                        <p class="proposal_headtext">Vorschläge für dich</p>
+                        <button class="button_sidenews button_head_proposal">
+                        Alle ansehen
+                     </button>
+                    </div>
+                    <div class="box_proposals">
+                        <img class="icon_pic" src="./img/marco.jpg" alt="proposal_pic" />
+                        <div class="box_proposals_name">
+                            <p class="proposal_name">MarcOx</p>
+                            <p class="proposal_subtext">Neu auf Instantnews</p>
+                        </div>
+                        <button class="button_sidenews">Folgen</button>
+                    </div>
+                    <div class="box_proposals">
+                        <img class="icon_pic" src="./img/alex.jpg" alt="proposal_pic" />
+                        <div class="box_proposals_name">
+                            <p class="proposal_name">Lexi</p>
+                            <p class="proposal_subtext">Neu auf Instantnews</p>
+                        </div>
+                        <button class="button_sidenews">Folgen</button>
+                    </div>
+                    <div class="box_proposals">
+                        <img class="icon_pic" src="./img/foodtastisch.jpg" alt="proposal_pic" />
+                        <div class="box_proposals_name">
+                            <p class="proposal_name">Foodtastisch</p>
+                            <p class="proposal_subtext">Neu auf Instantnews</p>
+                        </div>
+                        <button class="button_sidenews">Folgen</button>
+                    </div>
+                    <div class="box_proposals">
+                        <img class="icon_pic" src="./img/kluge.jpg" alt="proposal_pic" />
+                        <div class="box_proposals_name">
+                            <p class="proposal_name">Klgue</p>
+                            <p class="proposal_subtext">Neu auf Instantnews</p>
+                        </div>
+                        <button class="button_sidenews">Folgen</button>
+                    </div>
+                    <div class="box_proposals">
+                        <img class="icon_pic" src="./img/cats.jpg" alt="proposal_pic" />
+                        <div class="box_proposals_name">
+                            <p class="proposal_name">lovelykittens</p>
+                            <p class="proposal_subtext">Neu auf Instantnews</p>
+                        </div>
+                        <button class="button_sidenews">Folgen</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
