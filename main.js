@@ -40,8 +40,6 @@ let posts = [{
     },
 ];
 
-
-
 function renderFeed() {
     for (let i = 0; i < posts.length; i++) {
         generateFeed(i);
@@ -80,13 +78,13 @@ function pushComment(i) {
 }
 
 function deleteComment(j, i) {
-    posts[i]['comments'].splice(j, 1);
+    posts[i]["comments"].splice(j, 1);
     // comment["comments"].splice(j, 1)
     generateComment(i);
 }
 
 function filterFeed() {
-    let search = document.getElementById('search').value;
+    let search = document.getElementById("search").value;
     search = search.toLowerCase();
     console.log(search);
     let feed = document.getElementById("feed");
@@ -94,10 +92,9 @@ function filterFeed() {
 
     for (let i = 0; i < posts.length; i++) {
         const post = posts[i];
-        if (post['author'].toLowerCase().includes(search)) {
+        if (post["author"].toLowerCase().includes(search)) {
             generateFeed(i);
         }
-
     }
 }
 
@@ -111,12 +108,10 @@ function generateComment(i) {
     let commentSection = document.getElementById("commentSection-" + i);
     const post = posts[i];
     commentSection.innerHTML = "";
-    for (let j = 0; j < post['comments'].length; j++) {
-        const postComments = post['comments'][j];
+    for (let j = 0; j < post["comments"].length; j++) {
+        const postComments = post["comments"][j];
         commentSection.innerHTML += htmlComment(postComments, j, i);
     }
-
-
 }
 
 function htmlComment(postComments, j, i) {
